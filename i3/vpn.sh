@@ -22,9 +22,9 @@ state="$(cat $interfacePath/operstate)"
 
 
 if [ "$state" == "unknown" ]; then
-	#ipaddr="$(ip addr show $interface | perl -n -e'/inet (.+)\// && print $1')"
-	#ipaddr="${ipaddr}"
-	ipaddr="YES"
+	ipaddr="$(ip addr show $interface | awk '/192\.168\./ && /inet/{print $2}')"
+	ipaddr="${ipaddr}"
+	#ipaddr="YES"
 else
 	ipaddr="down"
 	status=33
