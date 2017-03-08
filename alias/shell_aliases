@@ -44,4 +44,4 @@ alias shutdown='systemctl poweroff'
 
 #set python 2.7.8 default
 alias python="/usr/bin/python2.7"
-
+alias py="$HOME/soft/py27/bin/python"
