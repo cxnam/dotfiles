@@ -91,7 +91,12 @@ export HISTTIMEFORMAT="%F %T "
 export HISTSIZE=999999
 export HISTFILESIZE=999999999
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+#PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 #Source shell_alias
 [[ -s "$HOME/.shell_aliases" ]] && source "$HOME/.shell_aliases"
