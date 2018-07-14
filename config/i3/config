@@ -169,5 +169,5 @@ client.unfocused #073642 #073642 #93a1a1 #586e75
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 
 #start app
-exec feh --bg-scale /home/namcx/Pictures/Wallpapers/yosemite-park-fog-over-mountain-wallpaper-1366x768.jpg
+#exec feh --bg-scale /home/namcx/Pictures/Wallpapers/yosemite-park-fog-over-mountain-wallpaper-1366x768.jpg
 exec xscreensaver
