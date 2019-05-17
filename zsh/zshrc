@@ -62,7 +62,7 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git git-flow git_remote_branch
+  git git-flow kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -142,4 +142,3 @@ if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 
-dbus-update-activation-environment --all
